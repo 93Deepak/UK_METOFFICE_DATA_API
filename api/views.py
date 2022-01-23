@@ -12,11 +12,6 @@ from .models import *
 
 
 def params():
-    # try:
-    #     obj = Country.objects.last()
-    # except:
-    #     obj = None
-    # if obj == None:
     
     ls_region = []
     ls_parameter = []
@@ -34,13 +29,6 @@ def params():
             ls_parameter.append(i['value'])
         
     return ls_region, ls_parameter
-        # for i in region_list:
-        #     obj = Country.objects.create(country=i['value'])
-        #     obj.save()
-        #     for j in param_list:
-        #         param = Parameter.objects.create(country=obj, parameter=j['value'])
-    # else:
-    #     pass
                            
     
 # Create your views here.
@@ -98,9 +86,6 @@ def Check(request):
                             n += 1
                     value.append(ls)
                             
-                            
-            
-            
             respons = {}
             for i in range(len(value)):
                 index = {}
